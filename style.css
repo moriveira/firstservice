@@ -103,7 +103,7 @@ header {
     padding: 0;
     margin: 0;
     padding-bottom: 5%;
-    margin-left: -1%;
+    margin-left: -3%;
 }
 
 .abouttext h1 {
@@ -282,7 +282,7 @@ header {
 
 @media screen and (max-width:590px) {
     .abouttext .aboutp {
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 
