@@ -1,0 +1,143 @@
+* {
+    font-family: "Montserrat", serif;
+}
+
+body {
+    background: url(img/wallpaper2.jpg);
+}
+
+#lobby {
+    display: flex;
+    justify-content: center;
+}
+
+.lobbytext {
+    color: white;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.lobbytext, .backbuttom {
+    display: flex;
+}
+
+.backbuttom {
+    margin: 2%;
+    position: absolute;
+    left: 0;
+}
+
+.backbuttom a {
+    text-decoration: none;
+}
+
+.backbuttom h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.backbuttom p {
+    color: white;
+    margin-top: -10%;
+    width: 400px;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: "Bebas Neue", serif;
+}
+
+.backbuttom p:hover {
+    transition: 0.3s all;
+    color: black;
+    background-color: white;
+}
+
+#servicespage2 {
+    flex-wrap: wrap;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.service1 img, .service2 img, .service3 img, .service4 img, .service5 img, 
+.service6 img, .service7 img, .service8 img, .service9 img, .service10 img, 
+.service11 img, .service12 img, .service13 img, .service14 img, .service15 img,
+.service16 img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.3s;
+}
+
+.service1:hover img, .service2:hover img, .service3:hover img, .service4:hover img, 
+.service5:hover img, .service6:hover img, .service7:hover img, .service8:hover img, 
+.service9:hover img, .service10:hover img, .service11:hover img, .service12:hover img, 
+.service13:hover img, .service14:hover img, .service15:hover img, .service16:hover img {
+    width: 100%;
+    height: 60%;
+    transition: all 0.3s;
+}
+
+.service1 p, .service2 p, .service3 p, .service4 p, .service5 p, 
+.service6 p, .service7 p, .service8 p, .service9 p, .service10 p, 
+.service11 p, .service12 p, .service13 p, .service14 p, .service15 p,
+.service16 p {
+    color: white;
+    font-family: "Bebas Neue", serif;
+    font-size: 30px;
+}
+
+.service1 h1, .service2 h1, .service3 h1, .service4 h1, .service5 h1, 
+.service6 h1, .service7 h1, .service8 h1, .service9 h1, .service10 h1, 
+.service11 h1, .service12 h1, .service13 h1, .service14 h1, .service15 h1,
+.service16 h1 {
+    color: white;
+    font-family: "Montserrat", serif;
+    text-align: center;
+}
+
+.service1 a, .service2 a, .service3 a, .service4 a, .service5 a, 
+.service6 a, .service7 a, .service8 a, .service9 a, .service10 a, 
+.service11 a, .service12 a, .service13 a, .service14 a, .service15 a,
+.service16 a {
+    width: 300px;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.service1 a:hover, .service2 a:hover, .service3 a:hover, .service4 a:hover, 
+.service5 a:hover, .service6 a:hover, .service7 a:hover, .service8 a:hover, 
+.service9 a:hover, .service10 a:hover, .service11 a:hover, .service12 a:hover, 
+.service13 a:hover, .service14 a:hover, .service15 a:hover, .service16 a:hover {
+    background-color: rgb(74, 74, 74);
+}
+
+.service1, .service2, .service3, .service4, .service5, 
+.service6, .service7, .service8, .service9, .service10, 
+.service11, .service12, .service13, .service14, .service15,
+.service16 {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    object-fit: cover;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 5%;
+}

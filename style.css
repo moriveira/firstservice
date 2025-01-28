@@ -102,8 +102,8 @@ header {
     font-family: "Quicksand", sans-serif;
     padding: 0;
     margin: 0;
+    margin-left: -1%;
     padding-bottom: 5%;
-    margin-left: -3%;
 }
 
 .abouttext h1 {
@@ -143,10 +143,6 @@ header {
     margin-left: 5%;
 }
 
-.contact p {
-    width: 400px;
-}
-
 .contact p:hover {
     transition: 0.3s all;
     color: black;
@@ -158,7 +154,15 @@ header {
 }
 
 #services {
-    padding-bottom: 60%;
+    background: url(img/bmw.jpg);
+    user-select: none;
+    width: 100vw;
+    height: 1000px;
+    font-family: "Quicksand", sans-serif;
+    margin-left: -1%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    background-size: cover;
 }
 
 .servicetext h1 {
@@ -184,6 +188,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 2%;
+    margin-bottom: 1%;
 }
 
 .service1 img, .service2 img, .service3 img, .service4 img {
@@ -247,6 +252,47 @@ header {
     font-size: 13px;
 }
 
+.catalogservices {
+    background-color: black;
+    user-select: none;
+    width: 100vw;
+    height: 350px;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catalogservices a {
+    text-decoration: none;
+}
+
+.catalogservices h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.catalogservices p {
+    margin-top: -10%;
+    width: 400px;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: "Bebas Neue", serif;
+}
+
+.catalogservices p:hover {
+    transition: 0.3s all;
+    color: black;
+    background-color: white;
+}
+
 
 @media screen and (max-width:1500px) {
     #menu {
@@ -255,6 +301,18 @@ header {
 
     .service1, .service2, .service3, .service4 {
         width: 330px;
+    }
+
+    #services {
+        background: url(img/bmw.jpg);
+        user-select: none;
+        width: 100vw;
+        height: 1300px;
+        font-family: "Quicksand", sans-serif;
+        margin-left: -1%;
+        padding-top: 1%;
+        padding-bottom: 5%;
+        background-size: cover;
     }
 }
 
@@ -277,6 +335,7 @@ header {
         margin: 0 10% 0 10%;
     }
 
+    
 
 }
 
@@ -284,9 +343,26 @@ header {
     .abouttext .aboutp {
         font-size: 18px;
     }
+
+    .contact {
+        width: 350px;
+    }
+
+    .contact p {
+        width: 350px;
+    }
+
+    #about {
+        margin-left: -3%;
+    }
+
+    .catalogservices {
+        margin-left: -3%;
+    }
 }
 
 @media screen and (max-width:1280px) {
+
 
     #menu {
         width: 70vw;
