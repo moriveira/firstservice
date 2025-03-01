@@ -3,6 +3,12 @@
     font-family: "Bebas Neue", serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -97,12 +103,11 @@ header {
     background-color: black;
     user-select: none;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 750px;
     font-family: "Quicksand", sans-serif;
     padding: 0;
     margin: 0;
-    margin-left: -1%;
     padding-bottom: 5%;
 }
 
@@ -156,10 +161,9 @@ header {
 #services {
     background: url(img/bmw.jpg);
     user-select: none;
-    width: 100vw;
+    width: 100%;
     height: 1000px;
     font-family: "Quicksand", sans-serif;
-    margin-left: -1%;
     padding-top: 1%;
     padding-bottom: 5%;
     background-size: cover;
@@ -189,7 +193,6 @@ header {
     display: flex;
     justify-content: center;
     gap: 2%;
-    margin-bottom: 1%;
 }
 
 .service1 img, .service2 img, .service3 img, .service4 img {
@@ -256,7 +259,7 @@ header {
 .catalogservices {
     background-color: black;
     user-select: none;
-    width: 100vw;
+    width: 101%;
     height: 350px;
     font-family: "Quicksand", sans-serif;
     display: flex;
@@ -296,46 +299,57 @@ header {
     background-color: white;
 }
 
-#galeria {
-    background: url(img/freepik__upload__72167.jpg);
+
+#contact {
     user-select: none;
-    width: 100vw;
-    height: 1000px;
-    font-family: "Quicksand", sans-serif;
-    margin-left: -1%;
-    background-size: cover;
-
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    padding-bottom: 1%;
 }
 
-.galeriatext {
+#contact .contacttext h1 {
+    padding-top: 5%;
+    color: white;
     text-align: center;
-    font-size: 60px;
-    font-family: "Montserrat", serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 120px;
+    
 }
 
-.galeriaphotos {
+#contact .socials {
+    padding-bottom: 1%;
     display: flex;
     justify-content: center;
-    gap: 1%;
+    gap: 5%;
 }
 
-.galeriaphotos img {
-    filter: brightness(0.5);
-    width: 200px;
-    height: 500px;
-    object-fit: cover;
-    transition: all 0.5s;
+#contact .socials a {
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-weight: 350;
+    transition: all 0.4s;
+    color: rgb(174, 174, 174);
+    padding: 15px 16px 10px 16px;
+    border: 3px solid white;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    border-radius: 50%;
 }
 
-.galeriaphotos img:hover {
-    transition: all 0.5s;
-    width: 600px;
-    height: 500px;
-    filter: brightness(1);
+#contact .socials a:hover {
+    transition: all 0.4s;
+    color: white;
+    filter: invert(1);
+    border: 3px solid transparent;
+}
+
+#contact .socials img {
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -352,10 +366,9 @@ header {
     #services {
         background: url(img/bmw.jpg);
         user-select: none;
-        width: 100vw;
+        width: 100%;
         height: 1300px;
         font-family: "Quicksand", sans-serif;
-        margin-left: -1%;
         padding-top: 1%;
         padding-bottom: 5%;
         background-size: cover;
@@ -364,16 +377,6 @@ header {
 
 @media screen and (max-width:1040px) {
 
-
-    .galeriaphotos img {
-        width: 150px;
-        height: 350px;
-    }
-
-    .galeriaphotos img:hover {
-        width: 300px;
-        height: 350px;
-    }
 
     #menu .inicio, #menu .sobre, #menu .agenda {
         display: none;
@@ -417,53 +420,11 @@ header {
         width: 350px;
     }
 
-    #about {
-        margin-left: -3%;
-    }
-
     .catalogservices {
         margin-left: -3%;
     }
 }
 
-@media screen and (max-width:670px) {
-    
-    #galeria {
-        margin-top: 160%;
-    }
-
-    .galeriaphotos img {
-        width: 100px;
-        height: 300px;
-    }
-
-    .galeriaphotos img:hover {
-        width: 200px;
-        height: 300px;
-    }
-
-}
-
-@media screen and (max-width:600px) {
-
-    #galeria {
-        margin-top: 180%;
-    }
-    
-
-}
-
-@media screen and (max-width:520px) {
-    #galeria {
-        margin-top: 200%;
-    }
-}
-
-@media screen and (max-width:410px) {
-    #galeria {
-        margin-top: 280%;
-    }
-}
 
 @media screen and (max-width:380px) {
     #menu ul img {
@@ -471,17 +432,20 @@ header {
         height: 22px;
     }
 
-    #galeria {
-        margin-top: 300%;
-    }
 
 }
 
-@media screen and (max-width:1280px) {
-
-    #galeria {
-        padding-top: 15%;
+@media screen and (max-width: 450px) {
+    #contact {
+        margin-top: 300%;
     }
+
+    #services {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1280px) {
 
 
     #menu {
